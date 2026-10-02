@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>林元鴻 Yuan-Hong Lin</title>
+<meta name="description" content="林元鴻 Yuan-Hong Lin，國立清華大學統計與數據科學研究所碩士生。">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/96862418?v=4">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #222;
+    --muted: #6b6b6b;
+    --line: #e5e5e5;
+    --link: #1a5fb4;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161616;
+      --text: #e4e4e4;
+      --muted: #9a9a9a;
+      --line: #2c2c2c;
+      --link: #78aeed;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.75 -apple-system, "Segoe UI", "Helvetica Neue", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* header */
+  .profile { display: flex; gap: 28px; align-items: center; margin-bottom: 40px; }
+  .profile img { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; flex: none; }
+  .profile h1 { font-size: 28px; font-weight: 600; margin: 0; line-height: 1.3; }
+  .profile h1 span { font-weight: 400; color: var(--muted); font-size: 20px; margin-left: 8px; }
+  .profile .aff { margin: 4px 0 10px; color: var(--muted); }
+  .profile .links { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 15px; }
+
+  h2 {
+    font-size: 19px; font-weight: 600;
+    margin: 44px 0 16px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 12px; }
+
+  /* dated rows */
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rows li { display: flex; justify-content: space-between; gap: 16px; padding: 6px 0; }
+  .rows .what b { font-weight: 600; }
+  .rows .what div { color: var(--muted); font-size: 15px; }
+  .rows .when { color: var(--muted); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  /* projects */
+  .proj { margin: 0 0 20px; }
+  .proj h3 { font-size: 16px; font-weight: 600; margin: 0; }
+  .proj .note { color: var(--muted); font-weight: 400; font-size: 14px; }
+  .proj p { margin: 2px 0 0; font-size: 15px; }
+  .proj .meta { font-size: 14px; color: var(--muted); }
+
+  dl.skills { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 0; }
+  dl.skills dt { font-weight: 600; }
+  dl.skills dd { margin: 0; color: var(--text); }
+
+  footer { margin-top: 64px; color: var(--muted); font-size: 13px; }
+
+  @media (max-width: 560px) {
+    main { padding-top: 36px; }
+    .profile { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .profile img { width: 96px; height: 96px; }
+    .rows li { flex-direction: column; gap: 0; }
+    dl.skills { grid-template-columns: 1fr; gap: 0; }
+    dl.skills dd { margin-bottom: 10px; }
+  }
+</style>
+<link rel="stylesheet" href="assets/assistant.css">
+</head>
+<body>
+<main>
+
+  <header class="profile">
+    <img src="https://avatars.githubusercontent.com/u/96862418?v=4" alt="林元鴻">
+    <div>
+      <h1>林元鴻<span>Yuan-Hong Lin</span></h1>
+      <div class="aff">國立清華大學 統計與數據科學研究所 碩士生</div>
+      <div class="links">
+        <a href="mailto:a0909306586@gmail.com">Email</a>
+        <a href="https://github.com/Andy0211112">GitHub</a>
+        <a href="#" data-open-assistant>AI 小助手</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>About</h2>
+  <p>我目前就讀國立清華大學統計與數據科學研究所，大學畢業於清華大學數學系。研究興趣主要在生成模型（diffusion model、flow matching）、強化學習，以及它們在統計問題上的應用，例如實驗設計與 MCMC 抽樣。</p>
+  <p>我習慣從論文出發、自己把模型從頭實作一次，確認理解之後再往應用延伸。曾在中央研究院以 flow matching 生成實驗設計矩陣，也在台積電實習時用 OR-Tools 處理產能分配的最佳化問題。</p>
+
+  <h2>Education</h2>
+  <ul class="rows">
+    <li><div class="what"><b>國立清華大學</b><div>統計與數據科學研究所 碩士</div></div><div class="when">2025.09 – 現在</div></li>
+    <li><div class="what"><b>國立清華大學</b><div>數學系 學士</div></div><div class="when">2021.09 – 2025.06</div></li>
+  </ul>
+
+  <h2>Experience</h2>
+  <ul class="rows">
+    <li><div class="what"><b>線性模式 助教</b><div>國立清華大學</div></div><div class="when">2026.09 – 現在</div></li>
+    <li><div class="what"><b>暑期實習</b><div>台積電</div></div><div class="when">2026.07 – 2026.08</div></li>
+    <li><div class="what"><b>程式設計 助教</b><div>國立清華大學</div></div><div class="when">2025.09 – 2026.06</div></li>
+    <li><div class="what"><b>暑期實習</b><div>中央研究院</div></div><div class="when">2025.07 – 2025.08</div></li>
+    <li><div class="what"><b>微積分 助教</b><div>國立清華大學</div></div><div class="when">2023.02 – 2025.06</div></li>
+    <li><div class="what"><b>程式設計 助教</b><div>國立清華大學</div></div><div class="when">2023.09 – 2024.01</div></li>
+  </ul>
+
+  <h2>Awards</h2>
+  <ul class="rows">
+    <li><div class="what">碩士生成績優異獎學金</div><div class="when">114 下</div></li>
+    <li><div class="what">中研院壁報口頭報告比賽 優等獎</div><div class="when">2025</div></li>
+    <li><div class="what">TWSIAM 海報論文獎</div><div class="when">2025</div></li>
+    <li><div class="what">郵政大數據競賽 最佳應用獎、優等獎</div><div class="when">2024</div></li>
+    <li><div class="what">書卷獎</div><div class="when">110 下、113 下</div></li>
+    <li><div class="what">理學院學生獎</div><div class="when">110 上</div></li>
+  </ul>
+
+  <h2>Projects</h2>
+
+  <div class="proj">
+    <h3>個人資訊 RAG AI 小助手 <span class="note">— 就在這個網站右下角</span></h3>
+    <p>把履歷整理成適合 LLM 讀的知識庫，用 BM25 + 向量混合檢索與 tool-calling Agent 回答關於我的問題；公開版只含公開資料，並加上輸出過濾與流量限制。</p>
+    <div class="meta"><a href="#" data-open-assistant>試試看</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>Flow Matching for Experimental Design <span class="note">— 中研院暑期實習</span></h3>
+    <p>以 GNN-based flow matching 生成具 maximin / space-filling 性質的實驗設計矩陣，並與傳統數值最佳化方法比較。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/Generate-design-matrix-with-Flow-Matching">code</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>Training a Chess AI with Reinforcement Learning <span class="note">— TWSIAM 海報論文</span></h3>
+    <p>結合 MCTS、self-play 與 policy / value 網路，以類 AlphaZero 的方式訓練西洋棋 AI。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/Reinforcement-Learning">code</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>Generative-Proposal-MCMC</h3>
+    <p>以 DDPM、DDIM、flow matching 作為 Metropolis-Hastings 的全域 proposal，研究能否改善多峰分布的抽樣效率。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/Generative-Proposal-MCMC">code</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>LLM / VLM Model Compression &amp; Fine-tuning</h3>
+    <p>對 LLaMA、LLaVA、Qwen2.5-VL 進行 pruning、模型壓縮與 fine-tuning，並評估效能與推論效率。</p>
+  </div>
+
+  <div class="proj">
+    <h3>產能分配優化器 <span class="note">— 台積電暑期實習</span></h3>
+    <p>以 OR-Tools 建立多目標最佳化模型，求解產能分配與資源配置問題。</p>
+  </div>
+
+  <div class="proj">
+    <h3>郵務路徑優化 <span class="note">— 郵政大數據競賽</span></h3>
+    <p>串接 Google Maps API 自動搜尋配送路徑，並最佳化配送路線。</p>
+  </div>
+
+  <div class="proj">
+    <h3>Diffusion Model</h3>
+    <p>從零實作 DDPM，研究 diffusion model 的訓練與 sampling 機制。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/DDPM">code</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>Conditional DDPM &amp; Flow Matching</h3>
+    <p>在 i-CLEVR 資料集上做多物件條件式影像生成，以相同的 UNet 比較 DDPM 與 flow matching。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/conditional-ddpm-flow-matching">code</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>DQN on CartPole &amp; Atari Pong</h3>
+    <p>從 vanilla DQN 實作到 Double DQN + prioritized replay + n-step returns，並做消融實驗。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/atari-dqn-reinforcement-learning">code</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>Oxford-Pet Segmentation</h3>
+    <p>依原論文實作 UNet 與 ResNet34-UNet，進行二元語意分割並比較兩者。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/oxford-pet-segmentation-unet">code</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>Online Portfolio Selection</h3>
+    <p>研究線上投資組合選擇與最佳化問題。</p>
+    <div class="meta"><a href="https://github.com/Andy0211112/Financial-Mathematics">code</a></div>
+  </div>
+
+  <p class="proj meta" style="color:var(--muted);font-size:14px">其他：<a href="https://github.com/Andy0211112/Random-number-generators">Random Number Generators</a>、<a href="https://github.com/Andy0211112/Laplacian-Eigenmap">Laplacian Eigenmaps</a>、<a href="https://github.com/Andy0211112/Deep-Learning">Deep Learning Notes</a></p>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Programming</dt><dd>Python (PyTorch, scikit-learn, pandas, NumPy), R, C++, SQL, VBA</dd>
+    <dt>Machine Learning</dt><dd>Deep learning, generative models, reinforcement learning, LLM / VLM, RAG / AI agents</dd>
+    <dt>Tools</dt><dd>OR-Tools, Google Maps API, Git</dd>
+  </dl>
+
+  <h2>Coursework</h2>
+  <dl class="skills">
+    <dt>資料分析</dt><dd>資料探勘與應用、統計計算、統計學習、數理統計、應用多變量分析、時間序列分析、類別資料分析、因果推論、線性模式、機率論</dd>
+    <dt>品管與可靠度</dt><dd>品質管制、可靠度分析、實驗設計與分析、應用機率模型</dd>
+    <dt>AI / 機器學習</dt><dd>深度學習、智慧人機互動、程式設計、資料結構</dd>
+  </dl>
+
+  <footer>Last updated: 2026.10</footer>
+</main>
+<!-- AI 小助手：data-api 是 Cloudflare Worker 的網址（deploy_worker.py 會自動填好） -->
+<script src="assets/assistant.js" data-api="https://andy-ai-assistant.a0909306586.workers.dev" defer></script>
+</body>
+</html>
